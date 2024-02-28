@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Ярослав",
+        "surname": "Галюшин",
+        "education": "Начальное",
+        "profession": "инженер-исследователь, инженер-строитель",
+        "sex": "male",
+        "motivation": "dsd",
+        "ready": true,
+        "img_src": "/static/img/user1.png"
+    }
+]

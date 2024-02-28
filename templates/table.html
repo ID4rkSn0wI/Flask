@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2 class="text-center">Оформление каюты</h2>
+    <table class="bg-light table table-borderless" style="border-collapse: collapse">
+        <tr class="border-0">
+            <td class="text-center border-0" scope="col" style="padding: 0; text-align: center;font-size:20px">Цвет стен</td>
+            <td class="text-center border-0" scope="col" style="padding: 0; text-align: center; font-size:20px">Эмблема</td>
+        </tr>
+        <tr class="border-0">
+            {% if sex == "male" and age < 21 %}
+                <td class="text-center border-0" style="width: 100%; height: 100%; padding: 0; text-align: center;"><img src="/static/img/blue.png" alt=""></td>
+            {% elif sex == "male" and age > 21 %}
+                <td class="text-center border-0" style="width: 100%; height: 100%; padding: 0; text-align: center;"><img src="/static/img/light_blue.png" alt=""></td>
+            {% elif sex == "female" and age < 21 %}
+                <td class="text-center border-0" style="width: 100%; height: 100%; padding: 0; text-align: center;"><img src="/static/img/orange.png" alt=""></td>
+            {% elif sex == "female" and age > 21 %}
+                <td class="text-center border-0" style="width: 100%; height: 100%; padding: 0; text-align: center;"><img src="/static/img/light_orange.png" alt=""></td>
+            {% endif %}
+            {% if age < 21 %}
+                <td class="text-center border-0" style="width: 100%; height: 100%; padding: 0; text-align: center;"><img src="/static/img/baby.png" alt=""></td>
+            {% elif age > 21 %}
+                <td class="text-center border-0" style="width: 100%; height: 100%; padding: 0; text-align: center;"><img src="/static/img/adult.png" alt=""></td>
+            {% endif %}
+        </tr>
+    </table>
+
+{% endblock %}

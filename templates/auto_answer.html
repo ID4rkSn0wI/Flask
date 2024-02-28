@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <ul class="list-group">
+        <p class="px-5" style="font-size: 22px">Фамилия: {{ user["surname"] }}</p>
+        <p class="px-5" style="font-size: 22px">Имя: {{ user["name"] }}</p>
+        <p class="px-5" style="font-size: 22px">Образование: {{ user["education"] }}</p>
+        <p class="px-5" style="font-size: 22px">Профессия: {{ user["profession"] }}</p>
+        <p class="px-5" style="font-size: 22px">Пол: {{ user["sex"] }}</p>
+        <p class="px-5" style="font-size: 22px">Мотивация: {{ user["motivation"] }}</p>
+        <p class="px-5" style="font-size: 22px">Готовы остаться на Марсе? {{ user["ready"] }}</p>
+    </ul>
+{% endblock %}
